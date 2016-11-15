@@ -8,4 +8,4 @@ var htmlcode = htmlEncode(request.responseText);
 
 
 hljs.initHighlighting.called = false;
-hljs.initHighlighting();
+hljs.initHighlightingOnLoad();

@@ -7,7 +7,7 @@ var htmlcode = htmlEncode(request.responseText);
 };
 
 hljs.configure({
-   languages: "HTML"     
+   languages: "xml"     
 });
 
 hljs.initHighlightingOnLoad();

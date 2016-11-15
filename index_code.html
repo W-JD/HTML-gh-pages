@@ -5,12 +5,21 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/styles/monokai-sublime.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     
   </head>
   <pre><code class="html">
   <p id="code"></p>
 </code></pre>
 <script>
+function htmlEncode(value){
+  //create a in-memory div, set it's inner text(which jQuery automatically encodes)
+  //then grab the encoded contents back out.  The div never exists on the page.
+  return $('<div/>').text(value).html();
+}
+function htmlDecode(value){
+  return $('<div/>').html(value).text();
+}
 function makeHttpObject() {
   try {return new XMLHttpRequest();}
   catch (error) {}
@@ -26,7 +35,7 @@ request.open("GET", "https://w-jd.github.io/HTML-gh-pages/index.html", true);
 request.send(null);
 request.onreadystatechange = function() {
   if (request.readyState == 4)
-    var htmlcode = encodeURI(request.responseText);
+var htmlcode = htmlEncode(request.responseText)
 document.getElementById("code").innerHTML=htmlcode;
 };
 </script>

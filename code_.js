@@ -5,6 +5,7 @@ request.onreadystatechange = function() {
 var htmlcode = htmlEncode(request.responseText);
  document.getElementById("code").innerHTML=htmlcode;
 };
+
 setTimeout(function(){
-    hljs.initHighlightingOnLoad();
+    hljs.initHighlighting();
 }, 1000);

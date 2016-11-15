@@ -26,14 +26,9 @@ request.onreadystatechange = function() {
   if (request.readyState == 4)
     var htmlcode = htmlEncode(request.responseText)
     document.getElementById("code").innerHTML=htmlcode;
-hljs.configure({
+    hljs.configure({
    languages: "HTML"     
-})
-    hljs.initHighlighting();
-  else
-     document.getElementById("code").innerHTML=htmlcode;
-hljs.configure({
-   languages: "HTML"     
-})
-    hljs.initHighlighting();
-};
+      })
+      hljs.initHighlighting();
+
+  };

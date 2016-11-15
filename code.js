@@ -1,10 +1,6 @@
 /**
 W-JD https://github.com/W-JD
 **/
-document.getElementById("code").innerHTML=htmlcode;
-hljs.configure({
-   languages: "HTML"     
-})
 
 function htmlEncode(value){
   //create a in-memory div, set it's inner text(which jQuery automatically encodes)
@@ -29,7 +25,15 @@ request.send(null);
 request.onreadystatechange = function() {
   if (request.readyState == 4)
     var htmlcode = htmlEncode(request.responseText)
+    document.getElementById("code").innerHTML=htmlcode;
+hljs.configure({
+   languages: "HTML"     
+})
     hljs.initHighlighting();
   else
+     document.getElementById("code").innerHTML=htmlcode;
+hljs.configure({
+   languages: "HTML"     
+})
     hljs.initHighlighting();
 };

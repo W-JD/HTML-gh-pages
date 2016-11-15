@@ -27,4 +27,5 @@ request.onreadystatechange = function() {
 var htmlcode = htmlEncode(request.responseText)
 document.getElementById("code").innerHTML=htmlcode;
 hljs.initHighlightingOnLoad();
+hljs.initHighlighting();
 };

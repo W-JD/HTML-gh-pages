@@ -1,1 +1,31 @@
-eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('3 d(5){2 $("<b/>").c(5).6()}3 J(5){2 $("<b/>").6(5).c()}3 h(){7{2 8 s()}9(a){}7{2 8 g("q.i")}9(a){}7{2 8 g("k.i")}9(a){}B l("m n o p 1 r.");}e 1=h();1.t("u","v://w-x.y.z/A-j-C/D.6",!0),1.E(F),1.G=3(){H(4==1.I)e f=d(1.K);L.M("N").O=f,P.Q()};',53,53,'|request|return|function||value|html|try|new|catch|error|div|text|htmlEncode|var|htmlcode|ActiveXObject|makeHttpObject|XMLHTTP|gh|Microsoft|Error|Could|not|create|HTTP|Msxml2|object|XMLHttpRequest|open|GET|https||jd|github|io|HTML|throw|pages|index|send|null|onreadystatechange|if|readyState|htmlDecode|responseText|document|getElementById|code|innerHTML|hljs|initHighlightingOnLoad'.split('|'),0,{}))
+/**
+W-JD https://github.com/W-JD
+**/
+
+function htmlEncode(value){
+ -  //create a in-memory div, set it's inner text(which jQuery automatically encodes)
+ -  //then grab the encoded contents back out.  The div never exists on the page.
+ -  return $('<div/>').text(value).html();
+ -}
+ -function htmlDecode(value){
+ -  return $('<div/>').html(value).text();
+ -}
+ -function makeHttpObject() {
+ -  try {return new XMLHttpRequest();}
+ -  catch (error) {}
+ -  try {return new ActiveXObject("Msxml2.XMLHTTP");}
+ -  catch (error) {}
+ -  try {return new ActiveXObject("Microsoft.XMLHTTP");}
+ -  catch (error) {}
+ -
+ -  throw new Error("Could not create HTTP request object.");
+ -}
+ -var request = makeHttpObject();
+ -request.open("GET", url, true);
+ -request.send(null);
+ -request.onreadystatechange = function() {
+ -  if (request.readyState == 4)
+ -var htmlcode = htmlEncode(request.responseText)
+ -document.getElementById("code").innerHTML=htmlcode;
+ -hljs.initHighlightingOnLoad();
+ -};

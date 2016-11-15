@@ -6,6 +6,4 @@ var htmlcode = htmlEncode(request.responseText);
  document.getElementById("code").innerHTML=htmlcode;
 };
 
-hljs.configure({languages: ["xml","javascript"]})
-
-hljs.initHighlighting();
+hljs.initHighlightingOnLoad();

@@ -10,4 +10,4 @@ hljs.configure({
    languages: "HTML"     
 });
 
-hljs.initHighlighting();
+hljs.initHighlightingOnLoad();

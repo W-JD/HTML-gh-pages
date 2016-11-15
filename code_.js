@@ -10,4 +10,4 @@ hljs.configure({
    languages: "xml"     
 });
 
-hljs.initHighlightingOnLoad();
+hljs.initHighlighting();

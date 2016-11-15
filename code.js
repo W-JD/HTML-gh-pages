@@ -26,5 +26,8 @@ request.onreadystatechange = function() {
   if (request.readyState == 4)
     var htmlcode = htmlEncode(request.responseText)
     document.getElementById("code").innerHTML=htmlcode;
-  setTimeout(hljs.initHighlighting(),400);
+ hljs.configure({
+   languages: "HTML"     
+})
+hljs.initHighlighting();
 };

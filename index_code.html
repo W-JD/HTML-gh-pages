@@ -11,6 +11,23 @@
   <p id="code"></p>
 </code></pre>
 <script>
-document.getElementById("code").innerHTML=encodeURI(w-jd.github.io/HTML-gh-pages/index.html);
+function makeHttpObject() {
+  try {return new XMLHttpRequest();}
+  catch (error) {}
+  try {return new ActiveXObject("Msxml2.XMLHTTP");}
+  catch (error) {}
+  try {return new ActiveXObject("Microsoft.XMLHTTP");}
+  catch (error) {}
+
+  throw new Error("Could not create HTTP request object.");
+}
+var request = makeHttpObject();
+request.open("GET", "https://w-jd.github.io/HTML-gh-pages/index.html", true);
+request.send(null);
+request.onreadystatechange = function() {
+  if (request.readyState == 4)
+    var htmlcode = encodeURI(request.responseText);
+document.getElementById("code").innerHTML=htmlcode;
+};
 </script>
 </html>

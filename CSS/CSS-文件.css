@@ -1,0 +1,33 @@
+
+h1 {
+	color: #191970;
+	font-size:80px;
+	background:black;
+	font-family: "Times New Roman", Georgia, Serif;
+    	color: white;
+  	text-align: center;
+
+}
+
+h3 {
+	color: lime;
+	font-size:30px;
+	background:green;
+}
+
+p {
+
+	color:green;
+	font-family: verdana;
+	font-size: 20px;
+
+}
+
+body {
+    background-color: lightblue;
+}
+
+
+* {
+	font-family: "Georgia","Times New Roman" ,Serif;
+}

@@ -11,8 +11,9 @@ h1 {
 
 h3 {
 	color: lime;
+	background-color: green;
 	font-size:30px;
-	background:green;
+	font-family: "Lucida Handwriting","Times New Roman" ,Serif;
 }
 
 p {
@@ -29,5 +30,6 @@ body {
 
 
 * {
-	font-family: "Georgia","Times New Roman" ,Serif;
+	font-family: "Comic Sans MS","Times New Roman" ,Serif;
+	color: MidNightBlue;
 }

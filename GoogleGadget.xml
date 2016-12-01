@@ -1,22 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+
 <Module>
-
-<ModulePrefs title="iframe"
-title_url="http://sites.google.com/site/gadgetsbysj/gadgets/iframe"
-description="iframe"
-thumbnail="http://sites.google.com/site/gadgetsbysj/gadgets/iframe/iframe-thumbnail.png"
-height="800"
-width="1000"
-<Require feature="dynamic-height"/>
-</ModulePrefs>
-<UserPref name="iframeURL" display_name="URL to content" required="true" />
+<ModulePrefs title="Include gadget (iframe)" title_url="http://sites.google.com/site/gadgetsbysj/gadgets/iframe" description="Include another web page in your Google Site" thumbnail="http://sites.google.com/site/gadgetsbysj/gadgets/iframe/iframe-thumbnail.png" height="800" width="600" author="Scott Johnston" author_email="scott.m.johnston@gmail.com">
+<Require feature="dynamic-height"/></ModulePrefs>
+<UserPref name="iframeURL" display_name="URL to content" required="true"/>
 <UserPref name="scroll" display_name="Display scrollbar" default_value="auto" datatype="enum">
-  <EnumValue value="auto" display_value="Automatic"/>
-  <EnumValue value="no" display_value="No"/>
-  <EnumValue value="yes" display_value="Yes"/>
+<EnumValue value="auto" display_value="Automatic"/>
+<EnumValue value="no" display_value="No"/>
+<EnumValue value="yes" display_value="Yes"/>
 </UserPref>
-
-<Content type="html" view="default,canvas"><![CDATA[
+<Content type="html" view="default,canvas">
+<![CDATA[
     <div id='dest'><img src="http://www.google.com/ig/images/spinner.gif"></div>
 <script type="text/javascript">
   

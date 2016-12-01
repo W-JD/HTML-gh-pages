@@ -7,7 +7,7 @@ description="iframe"
 thumbnail="http://sites.google.com/site/gadgetsbysj/gadgets/iframe/iframe-thumbnail.png"
 height="800"
 width="1000"
-  <Require feature="dynamic-height"/>
+<Require feature="dynamic-height"/>
 </ModulePrefs>
 <UserPref name="iframeURL" display_name="URL to content" required="true" />
 <UserPref name="scroll" display_name="Display scrollbar" default_value="auto" datatype="enum">

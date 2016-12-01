@@ -1,0 +1,34 @@
+#title {
+	color:#9398A8;
+	background-color:#575C6C;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: auto;
+    width: 100%;
+	line-height: 3;
+}
+html, body {
+    margin:0;
+    padding:0;
+}
+
+body {
+	background:url("../image/Grey-website-background.png") repeat 0 0;
+	height: auto;
+    width: 100%;
+	line-height: 2;
+}
+
+h1 {
+	font-size: 3em;
+}
+
+ul {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1.5em;
+}
+

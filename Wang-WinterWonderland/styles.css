@@ -1,0 +1,22 @@
+h1 {
+    color: #000000;
+}
+
+#text-box {
+    background-image: url('./image.jpg');
+    display: inline-block;
+    text-align: center;
+    background-size: contain,contain;
+    background-position: left top;
+    background-attachment: fixed;
+    border-radius: 25px;
+    border: 2px solid #000000;
+    background-repeat: repeat;
+    padding: 10px;
+    width: 900px;
+    height:600px;
+}
+
+ol,ul {
+    font-size: 3em;
+}

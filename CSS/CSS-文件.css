@@ -38,18 +38,18 @@ table {
 	font-family: "Trebuchet MS", 'Arial', sans-serif;
 	border-collapse: collapse;
 	width: auto;
-	position:absolute;
+	position:fixed;
 	left:300px;
 	bottom:250px;
 }
 
 td, th {
 	border: 2px solid black;
-	padding: 8px;
+	padding: 20px 20px 20px 20px;
 }
 
-tr:nth-child(even){background-color: gray;}
-tr:nth-child(odd){background-color: lightgray;}
+tr:nth-child(even){background-color: lightgray;}
+tr:nth-child(odd){background-color: gray;}
 tr:hover>td:hover {background-color: lightgreen;}
 
 th {

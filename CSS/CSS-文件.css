@@ -35,13 +35,13 @@ html {
 }
 
 table {
-    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-family: "Trebuchet MS", 'Arial', sans-serif;
     border-collapse: collapse;
-    width: 100%;
+    width: auto;
 }
 
 td, th {
-    border: 1px solid #ddd;
+    border: 2px solid black;
     padding: 8px;
 }
 
@@ -54,5 +54,5 @@ th {
     padding-bottom: 10px;
     text-align: middle;
     background-color: blue;
-    color: white;
+    color: black;
 }

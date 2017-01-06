@@ -29,7 +29,30 @@ body {
 }
 
 
-* {
+html {
 	font-family: "Comic Sans MS","Times New Roman" ,Serif;
 	color: MidNightBlue;
+}
+
+table {
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: gray;}
+
+tr:hover {background-color: lightgreen;}
+
+th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: middle;
+    background-color: blue;
+    color: white;
 }

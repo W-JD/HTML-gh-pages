@@ -1,0 +1,35 @@
+
+h1 {
+	color: #191970;
+	font-size:80px;
+	background:black;
+	font-family: "Times New Roman", Georgia, Serif;
+    	color: white;
+  	text-align: center;
+
+}
+
+h3 {
+	color: lime;
+	background-color: green;
+	font-size:30px;
+	font-family: "Lucida Handwriting","Times New Roman" ,Serif;
+}
+
+p {
+
+	color:green;
+	font-family: verdana;
+	font-size: 20px;
+
+}
+
+body {
+    background-color: lightblue;
+}
+
+
+* {
+	font-family: "Comic Sans MS","Times New Roman" ,Serif;
+	color: MidNightBlue;
+}

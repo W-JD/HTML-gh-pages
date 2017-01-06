@@ -38,7 +38,7 @@ table {
 	font-family: "Trebuchet MS", 'Arial', sans-serif;
 	border-collapse: collapse;
 	width: auto;
-	position:relative;
+	position:absolute;
 	left:80px;
 	bottom:200px;
 }

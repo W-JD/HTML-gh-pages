@@ -25,7 +25,7 @@ p {
 }
 
 body {
-    background-color: lightblue;
+	background-color: lightblue;
 }
 
 
@@ -35,25 +35,27 @@ html {
 }
 
 table {
-    font-family: "Trebuchet MS", 'Arial', sans-serif;
-    border-collapse: collapse;
-    width: auto;
+	font-family: "Trebuchet MS", 'Arial', sans-serif;
+	border-collapse: collapse;
+	width: auto;
+	position:relative;
+	right:80px;
+	top:200px;
 }
 
 td, th {
-    border: 2px solid black;
-    padding: 8px;
+	border: 2px solid black;
+	padding: 8px;
 }
 
 tr:nth-child(even){background-color: gray;}
 tr:nth-child(odd){background-color: lightgray;}
-
 tr:hover>td:hover {background-color: lightgreen;}
 
 th {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: middle;
-    background-color: blue;
-    color: black;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	text-align: middle;
+	background-color: blue;
+	color: black;
 }

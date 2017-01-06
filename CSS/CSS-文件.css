@@ -46,8 +46,9 @@ td, th {
 }
 
 tr:nth-child(even){background-color: gray;}
+tr:nth-child(odd){background-color: lightgray;}
 
-tr:hover {background-color: lightgreen;}
+tr:hover>td:hover {background-color: lightgreen;}
 
 th {
     padding-top: 10px;

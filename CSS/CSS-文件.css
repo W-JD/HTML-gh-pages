@@ -39,9 +39,8 @@ table {
 	border-collapse: collapse;
 	width: auto;
 	position:absolute;
-	display:block;
-	left:100%;
-	bottom:200px;
+	left:60%;
+	bottom:250px;
 }
 
 td, th {

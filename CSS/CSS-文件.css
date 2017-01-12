@@ -54,7 +54,7 @@ html {
 #image2 {
 	position: absolute;
 	left:240px;
-	bottom:120px;
+	bottom:0px;
 }
 
 table {

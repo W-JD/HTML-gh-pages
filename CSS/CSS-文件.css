@@ -19,8 +19,9 @@ h1 {
 }
 h3 {
 	color: lime;
+	display: block;
 	background-color: green;
-	font-size:30px;
+	font-size:38px;
 	font-family: "Lucida Handwriting","Times New Roman" ,Serif;
 }
 
@@ -60,6 +61,7 @@ table {
 
 td, th {
 	border: 2px solid black;
+	font-family:"Futura", 'Lucida Console', sans-serif;
 	padding: 10px 20px 10px 20px;
 }
 

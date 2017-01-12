@@ -15,18 +15,7 @@ h1 {
 footer {
 	color: black;
 	text-align: middle;
-	font-size:.7em;
-	border: 1px solid blue;
-	border-radius: 15px;
-	padding:0px 1px 0px 1px;
-	font-family: "Times New Roman", Georgia, Serif;
-  	text-align: center;
-}
-
-footer>p {
-	color: black;
-	text-align: middle;
-	font-size:.2em;
+	font-size:.5em;
 	border: 1px solid blue;
 	border-radius: 15px;
 	padding:0px 1px 0px 1px;

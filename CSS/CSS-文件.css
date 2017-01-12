@@ -44,7 +44,17 @@ html {
 }
 
 #table {
-    position: relative;
+	position: relative;
+}
+
+#images {
+	position: relative;
+}
+
+#image2 {
+	position: absolute;
+	left:240px;
+	bottom:120px;
 }
 
 table {

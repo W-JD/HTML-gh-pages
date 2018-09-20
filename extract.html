@@ -1,0 +1,7 @@
+<script>
+var url = prompt("Please enter your URL", "https://www.hudl.com/video/2/239635/5ba37deb9680ca041835770a");
+var urlpatt = /"sources":\{(.*?)\}/g
+$.ajax({ url: url, success: function(data) {
+document.write(urlpatt.exec(data)[0]);
+} });
+</script>
